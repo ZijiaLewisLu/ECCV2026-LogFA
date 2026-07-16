@@ -1,0 +1,5 @@
+dataset: "EgoPER"
+recipe: oatmeal
+test_split: a1_29v
+aux:
+  wandb_project: EgoPER

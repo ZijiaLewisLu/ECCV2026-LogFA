@@ -1,0 +1,63 @@
+# Python and editor state
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.vscode/
+.idea/
+.DS_Store
+.claude/
+
+# Research-workspace directories excluded from the minimal release
+/baselines/
+/cmd/
+/doc/
+/eccv_rebuttal/
+/epic_ar/
+/epic_ar_rebuttal/
+/exps/
+/ipynb/
+/results/
+/scripts/
+/viterbi/
+# Internal working docs, excluded from the public release
+/docs/RELEASE_PLAN.md
+/docs/GPU_HANDOFF.md
+/archive/
+
+# Local environments and credentials
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+
+# Build products
+build/
+dist/
+*/build/
+cpp/lib/
+
+# Data, generated features, checkpoints, and logs
+data/*
+!data/README.md
+!data/manifest.example.json
+dataset/
+log*/
+wandb/
+*.gz
+*.net
+*.pkl
+*.pt
+*.pth
+*.ckpt
+*.jsonl
+*.npy
+*.npz
+*.png
+*.jpg
+*.jpeg
+# README figure (kept despite the image ignores above)
+!/schematic.jpg

@@ -1,0 +1,49 @@
+{
+  "name": "LogFA-EgoPER",
+  "version": "1.0",
+  "feature_dimension": 1024,
+  "recipes": [
+    "coffee",
+    "oatmeal",
+    "pinwheels",
+    "quesadilla",
+    "tea"
+  ],
+  "artifacts": {
+    "annotations": {
+      "path": "annotations"
+    },
+    "frames": {
+      "path": "frames"
+    },
+    "siglip2": {
+      "path": "features/siglip2",
+      "shape": "[T_full, 1024]"
+    },
+    "local_pfe_sweep": {
+      "path": "features/local_pfe_sweep",
+      "pattern": "{recipe}/{video}_{tprompt_idx}.npy",
+      "shape": "[T_train, K, 1024]"
+    },
+    "gdag": {
+      "path": "gdag",
+      "pattern": "{recipe}.json"
+    },
+    "weights": {
+      "path": "weights/fact",
+      "format": "state_dict",
+      "block": "iuu",
+      "expected_checkpoints": 20,
+      "checkpoints": [
+        {
+          "mode": "logfa",
+          "recipe": "coffee",
+          "seed": 0,
+          "path": "weights/fact/logfa/coffee/seed0/model.pth",
+          "config": "weights/fact/logfa/coffee/seed0/config.yaml",
+          "metadata": "weights/fact/logfa/coffee/seed0/metadata.json"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,5 @@
+dataset: "EgoPER"
+recipe: quesadilla
+test_split: a2_39v
+aux:
+  wandb_project: EgoPER

@@ -1,0 +1,48 @@
+FACT:
+  block: iuu
+  cmr: 0.0
+  fpos: false
+  mwt: 0.0
+  ntoken: 200
+  trans: false
+Bi:
+  a: sca
+  a_dim: 128
+  a_ffdim: 512
+  a_layers: 6
+  a_nhead: 8
+  dropout: 0.1
+  f: m
+  f_dim: 128
+  f_layers: 10
+  f_ln: false
+  f_ngp: 1
+  hid_dim: 512
+Bu:
+  a: sa
+  a_layers: 1
+  a_nhead: 8
+  f: m
+  f_layers: 10
+Loss:
+  a2fc: 1.0
+  bgw: 1.0
+  match: o2o
+  nullw: -1.0
+  pc: 0.2
+  sw: 5.0
+TM:
+  inplace: true
+  m: 5
+  p: 0.1
+  t: 60
+  use: false
+batch_size: 1
+clip_grad_norm: 10.0
+epoch: null
+lr: 0.0001
+lr_decay: -1
+max_iter: 2000
+momentum: 0.0
+optimizer: Adam
+weight_decay: 0.0

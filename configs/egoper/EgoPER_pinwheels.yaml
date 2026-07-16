@@ -1,0 +1,5 @@
+dataset: "EgoPER"
+recipe: pinwheels
+test_split: a1_31v
+aux:
+  wandb_project: EgoPER

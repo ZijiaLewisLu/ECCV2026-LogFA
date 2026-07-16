@@ -1,0 +1,5 @@
+dataset: "EgoProceL"
+recipe: PC_disassemble
+test_split: split1
+aux:
+  wandb_project: EgoProceL
